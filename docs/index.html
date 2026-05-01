@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe — prabhatshuklp8050</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="frame">
+    <header class="header">
+      <h1>Tic Tac Toe</h1>
+      <p class="subtitle">Play vs Computer or a Friend — responsive & lightweight</p>
+    </header>
+
+    <section class="controls">
+      <label>
+        Mode:
+        <select id="mode">
+          <option value="pvp">Two Player</option>
+          <option value="pvc">Vs Computer</option>
+        </select>
+      </label>
+
+      <label id="choose-symbol-label">
+        Your Symbol:
+        <select id="symbol">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </label>
+
+      <label id="first-label">
+        First:
+        <select id="first">
+          <option value="human">Human</option>
+          <option value="computer">Computer</option>
+        </select>
+      </label>
+
+      <button id="reset" class="btn">New Game</button>
+    </section>
+
+    <section class="board-wrap">
+      <div id="board" class="board" aria-label="Tic Tac Toe board"></div>
+    </section>
+
+    <div id="status" class="status">Choose options and press New Game</div>
+
+    <footer class="footer">
+      <small>Made for prabhatshuklp8050 • Use on desktop or mobile</small>
+    </footer>
+  </main>
+
+<script src="app.js"></script>
+</body>
+</html>
